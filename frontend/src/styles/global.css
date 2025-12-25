@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==================== GLOBAL RESET ==================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================== BODY ==================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* ==================== HEADINGS ==================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* ==================== LINKS ==================== */
+a {
+  color: #17a2b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffc107;
+}
+
+/* ==================== BUTTONS ==================== */
+button, .btn {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button:disabled, .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ==================== CONTAINERS ==================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==================== FLEX UTILITIES ==================== */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==================== FORM ELEMENTS ==================== */
+input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  border: none;
+  padding: 0.7rem 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 8px #17a2b8, 0 0 12px #ffc107;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ==================== CARDS ==================== */
+.card {
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ==================== TEXT COLORS ==================== */
+.text-primary { color: #17a2b8; }
+.text-secondary { color: #ffc107; }
+.text-white { color: #fff; }
+.text-muted { color: rgba(255,255,255,0.7); }
+
+/* ==================== BACKGROUNDS ==================== */
+.bg-dark { background-color: #121212; }
+.bg-light { background-color: #1c1c1c; }
+.bg-primary { background-color: #17a2b8; }
+.bg-secondary { background-color: #ffc107; }
+
+/* ==================== SHADOWS ==================== */
+.shadow {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* ==================== ROUNDED ==================== */
+.rounded { border-radius: 15px; }
+.rounded-circle { border-radius: 50%; }
+
+/* ==================== MARGINS & PADDING ==================== */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+
+/* ==================== IMAGES ==================== */
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+}
+
+@media (max-width: 768px) {
+  .container { width: 95%; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+}

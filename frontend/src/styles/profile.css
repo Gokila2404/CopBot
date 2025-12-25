@@ -1,0 +1,109 @@
+.profile-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #ffc107, #17a2b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.message {
+  color: #17a2b8;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.profile-card {
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.profile-row label {
+  font-weight: 600;
+  color: #ffc107;
+}
+
+.profile-row span,
+.profile-row input {
+  flex: 1;
+  text-align: right;
+  color: #fff;
+}
+
+.profile-row input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(45deg, #17a2b8, #ffc107);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #17a2b8, 0 0 25px #ffc107;
+}
+
+.profile-btn.cancel {
+  background: #e74c3c;
+}
+
+.profile-btn.logout {
+  background: #3498db;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-row span,
+  .profile-row input {
+    text-align: left;
+    width: 100%;
+    margin-top: 0.3rem;
+  }
+}

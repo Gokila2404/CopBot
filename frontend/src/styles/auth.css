@@ -1,0 +1,89 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/bg-auth.jpg') no-repeat center/cover;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+}
+
+.auth-card {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  padding: 2.5rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #ffc107, #17a2b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.input-group input:focus {
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 0 15px #17a2b8, 0 0 25px #ffc107 inset;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #17a2b8, #ffc107);
+  color: #fff;
+  transition: all 0.4s ease;
+  margin-top: 0.5rem;
+}
+
+.auth-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #17a2b8, 0 0 25px #ffc107;
+}
+
+.auth-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffc107;
+}

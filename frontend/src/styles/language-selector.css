@@ -1,0 +1,17 @@
+.lang-select {
+  display: inline-block;
+}
+
+.lang-dropdown {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .lang-dropdown {
+    font-size: 0.9rem;
+  }
+}

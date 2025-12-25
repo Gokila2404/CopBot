@@ -1,0 +1,74 @@
+.about-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .about-page {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.about-page h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+body.dark-mode .about-page h1 {
+  color: #fff;
+}
+
+.about-page h2 {
+  font-size: 1.5rem;
+  color: #4f8ef7;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+body.dark-mode .about-page h2 {
+  color: #7fb5ff;
+}
+
+.about-page p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+body.dark-mode .about-page p {
+  color: #ccc;
+}
+
+.about-page ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-page li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+body.dark-mode .about-page li {
+  color: #ddd;
+}
+
+.about-page a {
+  color: #4f8ef7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.about-page a:hover {
+  color: #3a6fd1;
+  text-decoration: underline;
+}
